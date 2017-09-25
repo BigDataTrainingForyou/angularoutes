@@ -1,0 +1,18 @@
+<div ng-controller="audioCtrl" >  
+      <table border="1">
+        <tr> 
+            <th>Song Information</th> 
+            <th>Play Songs</th>
+        </tr>
+        <tr ng-repeat="audio in audios">
+
+          <td>
+            <div class="link">{{audio.songName}}</div>
+            <div class="item-artist">{{audio.fileSize}}<br> by <font color="blue">{{audio.singerName}}</font></div>
+          </td>
+          <td>
+            <audio src={{audio.audioSource}} controls class="link" loop></audio>        
+          </td>           
+        </tr>     
+      </table>
+    </div>   

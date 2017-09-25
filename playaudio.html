@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/dhtmlxscheduler.css">
+  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+
+<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+
+ <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-social.css" />
+      
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+
+    <script>document.write('<base href="' + document.location + '" />');</script>
+   
+   
+    <script data-require="angular-resource@*" data-semver="1.2.1" src="http://code.angularjs.org/1.2.1/angular-resource.js"></script>
+    
+    <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script data-require="bootstrap@2.3.2" data-semver="2.3.2" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <!--<script data-require="angular.js@1.4.0-beta.6" data-semver="1.4.0-beta.6" src="https://code.angularjs.org/1.4.0-beta.6/angular.js"></script> -->
+     
+    <script src="app.js"></script>
+<script src="js/audiocontroller.js"></script>
+  <script src="js/todowidget.js"></script>
+   <script src="js/displaytext.js"></script>
+   <script src="js/app.js"></script>
+  <script src="js/app.scheduler.js"></script>
+   <script src="js/dhtmlxscheduler.js"></script>
+   <script src="js/bookCtrl.js"></script>
+      <script src="js/accController.js"></script>
+</head>
+
+<body ng-app="audioApp">
+
+ 
+  <div class="container">
+
+     <!--breadcrumb-->
+    <div class="container-fluid">
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Category</a></li>
+        <li class="active">Sub-section</li>
+      </ol>
+    </div>
+    <!--/breadcrumb-->
+    
+    <!--big icon bar-->
+    <div class="container-fluid">
+      <ul class="nav nav-justified" id="iconbar">
+        <li><a class="text-center" href="#/acc"><i class="fa fa-tag fa-5x"></i> <br>Accordion</a></li>
+        <li><a class="text-center" href="#/task" ><i class="fa fa-bookmark fa-5x"></i> <br>Tasks</a></li>
+        <li><a class="text-center" href="#/photos"><i class="fa fa-camera fa-5x"></i> <br>Photos</a></li>
+        <li><a class="text-center" href="#/map"><i class="fa fa-map-marker fa-5x"></i> <br>Tour</a></li>
+        <li><a class="text-center" href="#/tune"><i class="fa fa-music fa-5x"></i> <br>Tunes</a></li>
+        <li><a class="text-center" href="#/book"><i class="fa fa-book fa-5x"></i> <br>Books</a></li>
+        <li><a class="text-center" href="#/video"><i class="fa fa-film fa-5x"></i> <br>Videos</a></li>
+      </ul>
+    </div>
+
+               
+
+                
+
+        <div ng-view></div>
+
+  </div>
+
+</body>
+
+
+</html>
